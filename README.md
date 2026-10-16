@@ -22,7 +22,23 @@ General chat tools answer smoothly even when the source is missing, and they oft
 
 ## Screenshots
 
-No screenshots have been taken yet. Placeholder names, and only names, are listed in [docs/screenshots/README.md](docs/screenshots/README.md).
+Captured on 16 October 2026 from a local run. The documents in these pictures are the synthetic demo set. They are not real cases.
+
+![CiteWise landing page](docs/screenshots/landing.png)
+
+![Document library filtered to the synthetic demo](docs/screenshots/library.png)
+
+![Research search over the synthetic collection](docs/screenshots/research.png)
+
+![PDF page of the synthetic Northwind demo](docs/screenshots/viewer.png)
+
+![A local model answer marked insufficient](docs/screenshots/answer.png)
+
+![Citation check for that answer](docs/screenshots/verification.png)
+
+![Settings showing local Ollama and no commercial API](docs/screenshots/settings.png)
+
+Notes for each image are in [docs/screenshots/README.md](docs/screenshots/README.md). The settings image includes this machine's local data directory path.
 
 ## Architecture
 
