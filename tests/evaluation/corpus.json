@@ -1,0 +1,69 @@
+{
+  "label": "Development test set. Synthetic passages for retrieval engineering. Not a legal benchmark and not a source of law.",
+  "passages": [
+    {
+      "id": "p-offer",
+      "text": "On 1 March the seller made a written offer to sell a refurbished espresso machine for 4800."
+    },
+    {
+      "id": "p-acceptance",
+      "text": "On 3 March the buyer sent a written acceptance of the offer to purchase the espresso machine."
+    },
+    {
+      "id": "p-consideration",
+      "text": "The price of 4800 was the consideration for the sale of the espresso machine."
+    },
+    {
+      "id": "p-remedy",
+      "text": "The demonstration court awards 900 as the cost of hiring a temporary espresso machine after late delivery."
+    },
+    {
+      "id": "p-hours",
+      "text": "The cafe opens to the public from seven in the morning until four in the afternoon."
+    },
+    {
+      "id": "p-statute",
+      "text": "Section 2-204 of the synthetic commerce code says a contract for sale may be made in any manner sufficient to show agreement."
+    },
+    {
+      "id": "p-modification",
+      "text": "Section 2-209 of the synthetic chapter says a modification needs no consideration to be binding in this demonstration text."
+    },
+    {
+      "id": "p-unrelated",
+      "text": "The archive room stores paper clips, boxes, and a spare ladder. It says nothing about contracts or sentencing."
+    }
+  ],
+  "queries": [
+    {
+      "id": "q-consideration",
+      "text": "What was the consideration for the espresso machine?",
+      "relevant": ["p-consideration", "p-offer"],
+      "k": 3
+    },
+    {
+      "id": "q-acceptance",
+      "text": "When was the written acceptance sent?",
+      "relevant": ["p-acceptance"],
+      "k": 3
+    },
+    {
+      "id": "q-remedy",
+      "text": "What amount was awarded for the temporary machine?",
+      "relevant": ["p-remedy"],
+      "k": 3
+    },
+    {
+      "id": "q-formation",
+      "text": "How may a contract for sale be made under section 2-204?",
+      "relevant": ["p-statute"],
+      "k": 3
+    },
+    {
+      "id": "q-hours",
+      "text": "What are the cafe opening hours?",
+      "relevant": ["p-hours"],
+      "k": 3
+    }
+  ]
+}

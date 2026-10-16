@@ -1,0 +1,33 @@
+# Application data, secrets, and build output
+.env
+backend/.env
+frontend/.env
+backend/data/
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Python
+backend/.venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.mypy_cache/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+
+# Models and indexes are local, never committed
+**/*.faiss
+**/vectors.npy
+**/manifest.json
+
+# OS and editors
+.DS_Store
+Thumbs.db

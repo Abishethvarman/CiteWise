@@ -1,0 +1,26 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      CITEWISE_DATA_DIR: /app/data
+      CITEWISE_DATABASE_URL: sqlite:////app/data/citewise.db
+      CITEWISE_OLLAMA_BASE_URL: http://host.docker.internal:11434
+      CITEWISE_CORS_ORIGINS: http://localhost:5173,http://127.0.0.1:5173
+      CITEWISE_EMBEDDING_BACKEND: ollama
+    volumes:
+      - citewise-data:/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_PROXY_TARGET: http://backend:8000
+    depends_on:
+      - backend
+
+volumes:
+  citewise-data:

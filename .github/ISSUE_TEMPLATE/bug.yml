@@ -1,0 +1,9 @@
+name: Bug
+description: Something in CiteWise did not behave as documented
+body:
+  - type: textarea
+    attributes:
+      label: What happened
+      description: Include the page, the API status, and whether a local model was running. Do not paste confidential document text.
+    validations:
+      required: true

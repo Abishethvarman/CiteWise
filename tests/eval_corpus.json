@@ -1,0 +1,23 @@
+{
+  "label": "Development test set. Synthetic passages only. Not a legal benchmark.",
+  "passages": [
+    {"id": "a", "text": "Northwind delivered oak timber twelve days after the contractual date and the buyer withheld payment."},
+    {"id": "b", "text": "Section 14 of the fictional Example Evidence Act says a business record may be admitted when the witness is unavailable."},
+    {"id": "c", "text": "The tribunal declined jurisdiction because the arbitration clause required proceedings in Oslo."},
+    {"id": "d", "text": "Damages for late timber were the difference between the contract price and the market price on the delivery date."},
+    {"id": "e", "text": "The officer recorded the interview at 09:40 and offered a break every hour."},
+    {"id": "f", "text": "Costs follow the event unless the court orders otherwise in this synthetic judgment."},
+    {"id": "g", "text": "The lease prohibited subletting without prior written consent of the landlord."},
+    {"id": "h", "text": "A witness is unavailable if the witness cannot be found after a reasonable search."}
+  ],
+  "queries": [
+    {"query": "oak timber contractual date", "relevant": ["a"]},
+    {"query": "business record witness unavailable", "relevant": ["b"]},
+    {"query": "arbitration clause Oslo", "relevant": ["c"]},
+    {"query": "contract price market price", "relevant": ["d"]},
+    {"query": "interview break every hour", "relevant": ["e"]},
+    {"query": "costs follow the event", "relevant": ["f"]},
+    {"query": "subletting written consent landlord", "relevant": ["g"]},
+    {"query": "reasonable search unavailable witness", "relevant": ["h"]}
+  ]
+}
